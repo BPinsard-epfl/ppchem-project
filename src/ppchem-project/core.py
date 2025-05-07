@@ -29,7 +29,6 @@ import os
 
 def build_data_table(molecule_names, output_file=None, delay=0.5):
     if output_file is None:
-        # Crée le chemin absolu vers le vrai dossier "data" en remontant deux niveaux
         output_file = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data", "data.csv"))
     data = []
     for name in molecule_names:
